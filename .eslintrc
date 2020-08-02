@@ -1,37 +1,30 @@
 {
-    "env": {
-        "mocha": true,
-        "node": true,
-        "es6": true
-    },
-    "extends": [
-        "eslint:recommended",
-        "plugin:node/recommended"
+  "env": {
+    "mocha": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "plugins": ["mocha"],
+  "rules": {
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "version": ">=8.0.0",
+        "ignores": ["modules"]
+      }
     ],
-    "plugins": [
-        "mocha"
-    ],
-    "rules": {
-        "node/no-unsupported-features/es-syntax": [
-            "error",
-            {
-                "version": ">=8.0.0",
-                "ignores": [
-                    "modules"
-                ]
-            }
-        ],
-        "no-console": "off",
-        "no-process-exit": "off"
-    },
-    "parser": "babel-eslint",
-    "globals": {
-        "expect": true,
-        "request": true,
-        "setupApp": true,
-        "supertest": true
-    },
-    "parserOptions": {
-        "sourceType": "module"
-    }
+    "no-console": "off",
+    "no-process-exit": "off"
+  },
+  "parser": "babel-eslint",
+  "globals": {
+    "expect": true,
+    "request": true,
+    "setupApp": true,
+    "supertest": true
+  },
+  "parserOptions": {
+    "sourceType": "module"
+  }
 }
