@@ -1,13 +1,13 @@
 language: node_js
 node_js:
-  - node
+- node
 sudo: false
 services: mongodb
 script:
-  - npm test
+- npm test
 deploy:
   provider: heroku
   api_key:
-    secure: $HEROKU_KEY
+    secure: HJrglgW3nNOqf0rSMcBmIHleVhNdjAcN4OKLUTY3istVqDe4Pt5gVMTp6Glvhrn3GcNsgh53pg0N/JXnMxYEJ9mSm4GKC/5AidkzsVCrB97l301X3DRYzB7YHz9CfjIBMtG28aQk1ZQvZw2OWThRbdLBIcZNDucLlxVu+Wi4fEyPw9++F1qs51kbFBhUzU5iorRB6agAzdiIm0YL56R67LjSR5Bmi3jzupxonwbXoCSaUXHx/hVcfEYrtX34ZbNXUN5daIUcieIlrpAgW69c7dQH1GaTr/+5d0Ex7v+vgVHTCM6ACdgpa+ASagHsVmnYpY2C6CSb55EKtFJJoyHZWaNBB2quIBmX8/Qu5nym+/FerNCeM5SNlu3Frx3l9GsugKllT4LBwEx+w+fUiUrvBRdxi7/8ggxCUneOAbz8uhAei4rInZIS7YALMWAVKRZVrMsRWjzqfO6p7SQy/iCRLwEPAWcFXNeOoNpdupJZKfqsrnNNHb9nSai2Gb1N+I02q9zGRzBeUyrCsfcFhL/SgeUaQaPMPmw0jE1BNFEpaQ0Vqjut/mPgTFl9h6NHusc5rTNU1JOtUODBYA5HDHCgaBbncyvhRLBwBucCKWUaGonINk/STncKoVexHCJO+lUe4Wpd0SOyAwSo7iPRwPDN574JzYT2hvZjnByyLzVbC6c=
   app: jstore-api
   edge: true
